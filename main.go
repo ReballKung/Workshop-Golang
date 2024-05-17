@@ -70,7 +70,7 @@ func num1() {
 	var j int
 
 	fmt.Printf("\n[")
-	for i := 0; i <= 100; i++ {
+	for i := 1; i <= 100; i++ {
 		if i%3 == 0 {
 			j = j + 1
 			fmt.Printf(" %d ", i)
@@ -107,7 +107,7 @@ func calMaxMIN(values []int) {
 		}
 	}
 
-	fmt.Println("Max : ", max)
+	fmt.Println("\nMax : ", max)
 	fmt.Println("Min : ", min)
 }
 
@@ -189,7 +189,7 @@ func num5() {
 	for key, value := range employees {
 		fmt.Println("----------------")
 		fmt.Println("Employees ID : ", key)
-		fmt.Printf("Name -:  %s (Age : %s) \n", value["name"], value["age"])
+		fmt.Printf("Name -:  %s (Age : %s)\n", value["name"], value["age"])
 		fmt.Printf("Address -:  %s \n", value["address"])
 	}
 }

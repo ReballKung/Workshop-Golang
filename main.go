@@ -189,9 +189,8 @@ func num5() {
 	for key, value := range employees {
 		fmt.Println("----------------")
 		fmt.Println("Employees ID : ", key)
-		for innetKey, innerValue := range value {
-			fmt.Println(innetKey, innerValue)
-		}
+		fmt.Printf("Name -:  %s (Age : %s) \n", value["name"], value["age"])
+		fmt.Printf("Address -:  %s \n", value["address"])
 	}
 }
 
